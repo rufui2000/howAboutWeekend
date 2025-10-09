@@ -25,33 +25,35 @@
 
     <section class="performers">
       <h2>出演予定者</h2>
-      <ul>
-            <script>
-    async function loadPerformer(id) {
-      try {
-        const res = await fetch(`/people/${id}`);
-        if (!res.ok) throw new Error("出演者が見つかりません");
+      <ul id="performer-list"></ul> <!-- ★これが必要！ -->
+      <script>
+  async function loadPerformer(id) {
+    try {
+      const res = await fetch(`/people/${id}`);
+      if (!res.ok) throw new Error("出演者が見つかりません");
 
-        const person = await res.json();
+      const person = await res.json();
 
-        document.getElementById("name").textContent = person.name;
-        document.getElementById("links").innerHTML = `
-        <li>
-          SNS: <a href="${person.twitter}" target="_blank">Twitter</a><br>
-          YouTube: <a href="${person.youtube}" target="_blank">チャンネル</a>
-          </li>
-        `;
-      } catch (e) {
-        document.getElementById("name").textContent = "エラー";
-        document.getElementById("links").textContent = e.message;
-      }
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <strong>${person.name}</strong><br />
+        SNS: <a href="${person.twitter}" target="_blank">Twitter</a> /
+        YouTube: <a href="${person.youtube}" target="_blank">チャンネル</a>
+      `;
+
+      document.getElementById("performer-list").appendChild(li);
+
+    } catch (e) {
+      const li = document.createElement("li");
+      li.textContent = "エラー: " + e.message;
+      document.getElementById("performer-list").appendChild(li);
     }
+  }
 
-    loadPerformer("たかや");
-    loadPerformer("たかや");
-    loadPerformer("たかや");
-  </script>
-      </ul>
+  // 複数人呼び出したい場合
+  const performerIds = ["たかや", "さとこ", "まさる"];
+  performerIds.forEach(id => loadPerformer(id));
+</script>
     </section>
 
     <section class="popular-videos">
