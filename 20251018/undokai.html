@@ -26,7 +26,6 @@
     <section class="performers">
       <h2>出演予定者</h2>
       <ul>
-        <li>
             <script>
     async function loadPerformer(id) {
       try {
@@ -37,8 +36,10 @@
 
         document.getElementById("name").textContent = person.name;
         document.getElementById("links").innerHTML = `
+        <li>
           SNS: <a href="${person.twitter}" target="_blank">Twitter</a><br>
           YouTube: <a href="${person.youtube}" target="_blank">チャンネル</a>
+          </li>
         `;
       } catch (e) {
         document.getElementById("name").textContent = "エラー";
@@ -47,14 +48,9 @@
     }
 
     loadPerformer("たかや");
+    loadPerformer("たかや");
+    loadPerformer("たかや");
   </script>
-        </li>
-        <li>
-          <strong>佐藤 花子</strong><br />
-          SNS: <a href="https://instagram.com/sato" target="_blank" rel="noopener noreferrer">Instagram</a> /
-          YouTube: <a href="https://youtube.com/sato" target="_blank" rel="noopener noreferrer">チャンネル</a>
-        </li>
-        <!-- 他の出演者も同様に追加 -->
       </ul>
     </section>
 
