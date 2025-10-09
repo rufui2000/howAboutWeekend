@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>イベント詳細</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="event-container">
-    <!-- タイトルと更新日 -->
     <header>
       <h1>イベントタイトル</h1>
       <p class="update-date">更新日: 2025年10月9日</p>
     </header>
 
-    <!-- メモ -->
     <section class="memo">
       <h2>メモ</h2>
       <p>ここにイベントに関するメモを記入します。</p>
     </section>
 
-    <!-- 開始時間と料金 -->
     <section class="schedule">
       <p><strong>開始時間:</strong> 2025年10月10日 18:00</p>
       <p><strong>料金:</strong> ¥3,000</p>
     </section>
 
-    <!-- 出演予定者 -->
     <section class="performers">
       <h2>出演予定者</h2>
       <ul>
         <li>
-          <h3>出演者名</h3>
-          <p>SNS: <a href="SNSリンク">リンク</a></p>
-          <p>YouTube: <a href="YouTubeリンク">リンク</a></p>
+          <strong>山田 太郎</strong><br />
+          SNS: <a href="https://twitter.com/yamada" target="_blank" rel="noopener noreferrer">Twitter</a> /
+          YouTube: <a href="https://youtube.com/yamada" target="_blank" rel="noopener noreferrer">チャンネル</a>
         </li>
-        <!-- 他の出演者も同様にリストアップ -->
+        <li>
+          <strong>佐藤 花子</strong><br />
+          SNS: <a href="https://instagram.com/sato" target="_blank" rel="noopener noreferrer">Instagram</a> /
+          YouTube: <a href="https://youtube.com/sato" target="_blank" rel="noopener noreferrer">チャンネル</a>
+        </li>
+        <!-- 他の出演者も同様に追加 -->
       </ul>
     </section>
 
-    <!-- 出演者人気動画 -->
     <section class="popular-videos">
       <h2>出演者の人気動画</h2>
       <ul>
         <li>
-          <a href="YouTube動画リンク" target="_blank">
-            <img src="サムネイル画像URL" alt="動画タイトル">
-            <p>動画タイトル</p>
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+            動画タイトル1
           </a>
         </li>
-        <!-- 他の動画も同様にリストアップ -->
+        <li>
+          <a href="https://youtu.be/3JZ_D3ELwOQ" target="_blank" rel="noopener noreferrer">
+            動画タイトル2
+          </a>
+        </li>
       </ul>
     </section>
 
-    <!-- 場所 -->
     <section class="location">
       <h2>場所</h2>
-      <p><strong>会場名:</strong> 会場名</p>
-      <p><strong>地図:</strong> <a href="地図リンク" target="_blank">Googleマップで表示</a></p>
-      <p><strong>最寄駅:</strong> 最寄駅名</p>
+      <p><strong>会場名:</strong> 渋谷ヒカリエホール</p>
+      <p><strong>地図:</strong> <a href="https://goo.gl/maps/XYZ" target="_blank" rel="noopener noreferrer">Googleマップで表示</a></p>
+      <p><strong>最寄駅:</strong> 渋谷駅</p>
     </section>
 
-    <!-- Twitter埋め込み -->
     <section class="twitter-feed">
       <h2>詳細情報</h2>
+      <!-- Twitterの埋め込みコードをここに -->
       <blockquote class="twitter-tweet">
-        <p lang="ja" dir="ltr">ここにTwitterの埋め込みコードを挿入します。</p>
+        <p lang="ja" dir="ltr">イベントの最新情報はこちら！ <a href="https://twitter.com/example/status/1234567890">https://twitter.com/example/status/1234567890</a></p>
       </blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
