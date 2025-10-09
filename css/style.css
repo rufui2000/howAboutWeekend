@@ -70,3 +70,69 @@ h1 {
 .hot-link:hover {
   text-decoration: underline;
 }
+
+.event-container {
+  background: white;
+  padding: 20px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  width: 100vw;
+  max-width: none;
+  margin: 0 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 90vh;
+  font-size: 16px;
+  color: #444;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+.update-date {
+  margin-bottom: 24px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+a {
+  color: #d6336c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.twitter-feed blockquote {
+  margin: 0 auto;
+  max-width: 500px;
+}
