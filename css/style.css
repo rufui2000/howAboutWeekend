@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.menu-item {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hot-link {
+  color: #d6336c;
+  font-weight: bold;
+}
+
+.hot-link:hover {
+  text-decoration: underline;
+}
