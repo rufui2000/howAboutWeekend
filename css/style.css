@@ -15,8 +15,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  width: 300px;
+  width: 90%;          /* 画面幅の90%に */
+  max-width: 400px;    /* 最大400pxまで */
+  box-sizing: border-box; /* padding含めて幅内に収める */
 }
+
 
 h1 {
   margin-bottom: 24px;
