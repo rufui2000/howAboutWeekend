@@ -11,14 +11,16 @@ body {
 
 .menu-container {
   background: white;
-  padding: 40px;
+  padding: 20px 16px;       /* スマホでのパディングを少し減らす */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  width: 90%;          /* 画面幅の90%に */
-  max-width: 400px;    /* 最大400pxまで */
-  box-sizing: border-box; /* padding含めて幅内に収める */
+  width: 100vw;             /* ビューポートの幅いっぱい */
+  max-width: none;          /* 最大幅の制限を外す */
+  margin: 0 10px;           /* 両サイドに少し余白 */
+  box-sizing: border-box;   /* パディング込みの幅 */
 }
+
 
 
 h1 {
@@ -27,9 +29,11 @@ h1 {
 }
 
 .menu-item {
-  margin: 10px 0;
-  font-size: 18px;
+  font-size: 20px;
+  margin: 12px 0;
+  line-height: 1.4;
 }
+
 
 .menu-item a {
   text-decoration: none;
