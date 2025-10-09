@@ -1,7 +1,7 @@
 export async function onRequest(context) {
   const { weekends } = context.env;
 
-  const query = "SELECT name, twitter, youtube FROM people";
+  const query = "SELECT name, sns, youtube FROM people";
   const { results } = await weekends.prepare(query).all();
 
   return Response.json(results);
