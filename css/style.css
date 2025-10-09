@@ -11,21 +11,44 @@ body {
 
 .menu-container {
   background: white;
-  padding: 20px 16px;       /* スマホでのパディングを少し減らす */
+  padding: 20px 16px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  width: 100vw;             /* ビューポートの幅いっぱい */
-  max-width: none;          /* 最大幅の制限を外す */
-  margin: 0 10px;           /* 両サイドに少し余白 */
-  box-sizing: border-box;   /* パディング込みの幅 */
+  width: 100vw;
+  max-width: none;
+  margin: 0 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 90vh;
 }
-
-
 
 h1 {
   margin-bottom: 24px;
   color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #eee;
+}
+
+.content {
+  margin-bottom: 24px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .menu-item {
@@ -33,7 +56,6 @@ h1 {
   margin: 12px 0;
   line-height: 1.4;
 }
-
 
 .menu-item a {
   text-decoration: none;
