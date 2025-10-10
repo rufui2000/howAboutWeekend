@@ -23,37 +23,22 @@
       <p><strong>料金:</strong> ¥3,000</p>
     </section>
 
-    <section class="performers">
+   <section class="performers">
       <h2>出演予定者</h2>
-      <ul id="performer-list"></ul> <!-- ★これが必要！ -->
-      <script>
-  async function loadPerformer(id) {
-    try {
-      const res = await fetch(`/people/${id}`);
-      if (!res.ok) throw new Error("出演者が見つかりません");
-
-      const person = await res.json();
-
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <strong>${person.name}</strong><br />
-        SNS: <a href="${person.twitter}" target="_blank">Twitter</a> /
-        YouTube: <a href="${person.youtube}" target="_blank">チャンネル</a>
-      `;
-
-      document.getElementById("performer-list").appendChild(li);
-
-    } catch (e) {
-      const li = document.createElement("li");
-      li.textContent = "エラー: " + e.message;
-      document.getElementById("performer-list").appendChild(li);
-    }
-  }
-
-  // 複数人呼び出したい場合
-  const performerIds = ["たかや","シュゴウ"];
-  performerIds.forEach(id => loadPerformer(id));
-</script>
+      <ul>
+        <li>
+          <p>出演者１
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+            sns
+          </a></p>
+        </li>
+        <li>
+          <p>出演者１
+          <a href="https://youtu.be/3JZ_D3ELwOQ" target="_blank" rel="noopener noreferrer">
+            sns
+          </a></p>
+        </li>
+      </ul>
     </section>
 
     <section class="popular-videos">
